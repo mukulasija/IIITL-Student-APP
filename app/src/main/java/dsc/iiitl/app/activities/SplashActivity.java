@@ -1,11 +1,15 @@
 package dsc.iiitl.app.activities;
 
+import android.Manifest;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.os.Handler;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
 
 import dsc.iiitl.app.MainActivity;
 import dsc.iiitl.app.R;
@@ -18,7 +22,6 @@ public class SplashActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
         sp = getSharedPreferences("login", MODE_PRIVATE);
-
         Handler handler = new Handler();
         handler.postDelayed(new Runnable() {
             @Override

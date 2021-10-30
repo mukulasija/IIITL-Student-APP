@@ -48,7 +48,7 @@ public class LogOut extends AppCompatActivity {
                 editor.clear();
                 editor.apply();
                 startActivity(new Intent(LogOut.this, Login.class));
-                finish();
+                finishAffinity();
             }
         };
 

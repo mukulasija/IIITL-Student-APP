@@ -39,6 +39,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/qs"
+
         android:gravity="center"
         android:text="What is the brand of furniture used in the college? 😛"
         android:textColor="#FFD700"
@@ -71,6 +72,7 @@
         android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
+        android:inputType="text"
         android:background="#fff"
         android:fontFamily="@font/ps"
         android:gravity="center"
